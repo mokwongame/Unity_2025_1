@@ -1,0 +1,18 @@
+프리팹(prefab): 미리(pre) 만들어 놓은(fabricate) 게임 오브젝트용 파일
+- Hierarchy > GameObject를 끌어서 Project > Assets
+
+===
+물리 엔진을 반영하는 방법
+- 먼저 게임 오브젝트를 선택
+- Inspector > Add Component > Physics > Rigidbody
+
+===
+에셋 스토어 사용
+- 메뉴 > Window > Asset Store
+- Asset Store > 3D > 주변환경 > 가격: 무료 에셋 선택
+- 에셋 구매후 "Unity에서 열기" 클릭 > Download > Import
+- 구입한 에셋을 확인: Window > My Assets
+
+
+
+
