@@ -13,6 +13,10 @@
 - 에셋 구매후 "Unity에서 열기" 클릭 > Download > Import
 - 구입한 에셋을 확인: Window > My Assets
 
+===
+분홍색 주변환경: 렌더링 오류
+- 해결: Material > Shader > Universal Rendering Pipeline > Complex Lit
+
 
 
 

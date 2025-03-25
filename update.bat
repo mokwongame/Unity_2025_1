@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "AssetProj 프로젝트 추가"
+git commit -m "Shader 오류 수정"
 git push -u origin main
