@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "MyZigzagBall 프로젝트 시작"
+git commit -m "makeBall() 스크립트 추가"
 git push -u origin main
