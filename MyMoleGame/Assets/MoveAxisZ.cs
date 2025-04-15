@@ -16,7 +16,7 @@ public class MoveAxisZ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float zoff = Input.GetAxis("Vertical")*speed * Time.deltaTime;
+        float zoff = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         float zpos = transform.position.z + zoff;
         if (zpos >= zmin && zpos <= zmax)
             transform.Translate(0.0f, 0.0f, zoff);
