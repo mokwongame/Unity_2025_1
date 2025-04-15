@@ -29,6 +29,6 @@ public class MakeHammer : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x = xpos;
         pos.z = zpos;
-        Instantiate(hammer, pos, transform.rotation);
+        Instantiate(hammer, pos, hammer.transform.rotation);
     }
 }
