@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "두더지를 무작위로 생성"
+git commit -m "각 게임 오브젝트에 tag 추가"
 git push -u origin main
