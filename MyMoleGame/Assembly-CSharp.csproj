@@ -64,6 +64,7 @@
     <Compile Include="Assets\FantasyHammerAndShield\MakeHammer.cs" />
     <Compile Include="Assets\MoveAxisZ.cs" />
     <Compile Include="Assets\MoveMole.cs" />
+    <Compile Include="Assets\BeginGame.cs" />
     <Compile Include="Assets\MakeMole.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\FantasyHammerAndShield\KillHammer.cs" />
