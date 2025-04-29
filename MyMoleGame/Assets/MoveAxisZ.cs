@@ -9,8 +9,8 @@ public class MoveAxisZ : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameManager gameManger = FindAnyObjectByType<GameManager>();
-        speed = gameManger.axisSpeed;
+        GameManager gameManager = FindAnyObjectByType<GameManager>();
+        speed = gameManager.axisSpeed;
     }
 
     // Update is called once per frame

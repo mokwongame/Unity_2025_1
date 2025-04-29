@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class CheckHammer : MonoBehaviour
 {
+    GameManager gameManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        gameManager = FindAnyObjectByType<GameManager>();
     }
 
     // Update is called once per frame
@@ -21,5 +23,18 @@ public class CheckHammer : MonoBehaviour
         // tag를 쓰려면 Unity Editor에서 tag를 등록 필요
         string tag = collision.gameObject.tag;
         Debug.Log($"tag = {tag}");
+        if (tag == "Mole") // 망치가 두더지와 충돌하면
+        {
+            gameManager.incScore(); // 점수 증가
+            Destroy(gameObject, 0.25f); // 0.25초 후에 망치(gameObject) 파괴
+            Destroy(collision.gameObject, 0.5f); // 0.5초 후에 두더지(collision.gameObject) 파괴
+            Debug.Log($"score = {gameManager.getScore()}");
+        }
+        else if (tag == "Plane") // 망치가 지면과 충돌하면
+        {
+            gameManager.decScore(); // 점수 감소
+            Destroy(gameObject, 0.25f);
+            Debug.Log($"score = {gameManager.getScore()}");
+        }
     }
 }
