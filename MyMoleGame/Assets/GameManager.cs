@@ -1,5 +1,6 @@
 using UnityEngine;
-using TMPro; // TextMeshPro를 쓰기(using: C 언어의 #include) 위한 선언
+using TMPro;
+using UnityEngine.SceneManagement; // TextMeshPro를 쓰기(using: C 언어의 #include) 위한 선언
 public class GameManager : MonoBehaviour
 {
     // 밸런싱 특성 변수
@@ -16,7 +17,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // 사용자가 Escape 키를 누르면(if) 현재 게임을 종료
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // EndGame 불러오기(load)
+            SceneManager.LoadScene("EndScene");
+        }
     }
 
     public int getScore() { return score; }

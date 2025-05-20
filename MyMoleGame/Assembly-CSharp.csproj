@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\FantasyHammerAndShield\MakeHammer.cs" />
     <Compile Include="Assets\MoveAxisZ.cs" />
+    <Compile Include="Assets\EndGame.cs" />
     <Compile Include="Assets\MoveMole.cs" />
     <Compile Include="Assets\BeginGame.cs" />
     <Compile Include="Assets\MakeMole.cs" />
