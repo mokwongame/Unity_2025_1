@@ -8,10 +8,16 @@ public class GameManager : MonoBehaviour
     int score = 0;  // 총 득점
     public TMP_Text textScore;
 
+    // 효과음 생성: AudioSource, AudioClip 필요
+    public AudioSource audioSource;
+    public AudioClip clipBreak;
+    public AudioClip voiceStart;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Start() // 현재 씬이 시작할 때(Start) 딱 한번만 호출되는 함수
     {
         updateScore();
+        playVoiceStart(); // 게임이 최초로 시작할 때(Start) 연주
     }
 
     // Update is called once per frame
@@ -33,5 +39,15 @@ public class GameManager : MonoBehaviour
     {
         // TMP_Text 갱신: text 멤버에 문자열 할당
         textScore.text = $"Score: {score}";
+    }
+
+    public void playBreak()
+    {
+        audioSource.PlayOneShot(clipBreak, 1.0f); // 볼륨 100%로 clipBreak 효과음을 한 번만(one shot) 연주(play)
+    }
+
+    public void playVoiceStart()
+    {
+        audioSource.PlayOneShot(voiceStart, 0.9f); // 볼륨을 90%로 연주
     }
 }

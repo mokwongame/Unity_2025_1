@@ -26,6 +26,7 @@ public class CheckHammer : MonoBehaviour
         if (tag == "Mole") // 망치가 두더지와 충돌하면
         {
             gameManager.incScore(); // 점수 증가
+            gameManager.playBreak(); // clipBreak 효과음을 연주
             Destroy(gameObject, 0.25f); // 0.25초 후에 망치(gameObject) 파괴
             Destroy(collision.gameObject, 0.5f); // 0.5초 후에 두더지(collision.gameObject) 파괴
             Debug.Log($"score = {gameManager.getScore()}");
