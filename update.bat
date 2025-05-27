@@ -1,4 +1,4 @@
 chcp 65001
 git add --all
-git commit -m "게임에 사운드 추가"
+git commit -m "TestGoblinGame 프로젝트 시작"
 git push -u origin main
