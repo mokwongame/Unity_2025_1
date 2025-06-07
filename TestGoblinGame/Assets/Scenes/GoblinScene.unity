@@ -440,6 +440,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &621407639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621407641}
+  - component: {fileID: 621407640}
+  m_Layer: 0
+  m_Name: GoblinPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &621407640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621407639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9e67421bfd7e04f891d80cf9dc1e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goblin: {fileID: 863694789448380152, guid: 0ae0abd78f45de54f90aaa54fe2a3b13, type: 3}
+--- !u!4 &621407641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621407639}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936352146
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +498,7 @@ GameObject:
   - component: {fileID: 936352147}
   m_Layer: 0
   m_Name: StoneFloor
-  m_TagString: Untagged
+  m_TagString: Plane
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -569,7 +614,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.47, y: -5.85, z: 0}
-  m_LocalScale: {x: 0.69490325, y: 0.035353847, z: 1}
+  m_LocalScale: {x: 1, y: 0.035353847, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -792,7 +837,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedBack: 1.5
   speedPlayer: 4
+  speedGoblin: 3
   forcePlayer: 3000
+  forceSpear: 1000
 --- !u!4 &2087919215
 Transform:
   m_ObjectHideFlags: 0
@@ -823,7 +870,7 @@ GameObject:
   - component: {fileID: 2101899053}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1076,6 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 374ce266c1def594b8a7d1558cbcadca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spear: {fileID: 4006008373944589378, guid: d9b83eaf1f3578748b235e630ad3cdb5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1088,3 +1136,4 @@ SceneRoots:
   - {fileID: 2087919215}
   - {fileID: 936352149}
   - {fileID: 2101899052}
+  - {fileID: 621407641}

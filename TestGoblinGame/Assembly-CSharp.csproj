@@ -61,8 +61,14 @@
     <Analyzer Include="D:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CheckSpear.cs" />
+    <Compile Include="Assets\MakeGoblin.cs" />
     <Compile Include="Assets\ScrollCemetery.cs" />
     <Compile Include="Assets\MovePlayer.cs" />
+    <Compile Include="Assets\KillSpear.cs" />
+    <Compile Include="Assets\KillBang.cs" />
+    <Compile Include="Assets\KillGoblin.cs" />
+    <Compile Include="Assets\MoveGoblin.cs" />
     <Compile Include="Assets\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
