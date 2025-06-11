@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
+    public GameObject spear;
+
     GameManager gameManager;
     float xmin = -6.0f;
     float xmax = 6.0f;
@@ -26,6 +28,20 @@ public class MovePlayer : MonoBehaviour
             float ypos = transform.position.y;
             if (ypos <= ymin) jumpPlayer();
         }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            makeSpear();
+        }
+    }
+
+    private void makeSpear()
+    {
+        Vector3 pos = transform.position;
+        pos.x += 3.0f;
+
+        GameObject newSpear = Instantiate(spear, pos, spear.transform.rotation);
+        Rigidbody2D rb = newSpear.GetComponent<Rigidbody2D>();
+        rb.AddForce(Vector2.right * gameManager.forceSpear);
     }
 
     private void jumpPlayer()

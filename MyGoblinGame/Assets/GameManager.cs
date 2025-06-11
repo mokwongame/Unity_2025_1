@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
     public float speedBack = 3.0f;
     public float speedPlayer = 6.0f;
     public float forcePlayer = 3000.0f;
+    public float forceSpear = 1000.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

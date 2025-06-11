@@ -593,6 +593,7 @@ MonoBehaviour:
   speedBack: 1.5
   speedPlayer: 6
   forcePlayer: 4000
+  forceSpear: 1000
 --- !u!4 &703498522
 Transform:
   m_ObjectHideFlags: 0
@@ -967,6 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1743be6204e83f4892d54e980ad5af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spear: {fileID: 5886663064835743483, guid: d75438b80335f414aa039cba233e4f8b, type: 3}
 --- !u!1 &1013441689
 GameObject:
   m_ObjectHideFlags: 0
