@@ -18,6 +18,8 @@ public class MakeGoblin : MonoBehaviour
 
     void makeGoblin()
     {
-        Instantiate(goblin, transform.position, transform.rotation);
+        int num = Random.Range(0, 3); // 0~(3-1)까지 정수 난수 발생; 0, 1, 2
+        if (num == 0) // 좀비 고블린 생성
+            Instantiate(goblin, transform.position, transform.rotation);
     }
 }

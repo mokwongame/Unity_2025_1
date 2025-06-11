@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 879978608305294618}
   - component: {fileID: 1550807480569296663}
   - component: {fileID: 4174404026123333015}
+  - component: {fileID: 1143677828350304368}
   m_Layer: 0
   m_Name: Spear
   m_TagString: Untagged
@@ -299,3 +300,15 @@ PolygonCollider2D:
       - {x: -2.0249999, y: -2.6799998}
       - {x: -1.685, y: -2.26}
   m_UseDelaunayMesh: 0
+--- !u!114 &1143677828350304368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5886663064835743483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53abc137f2b5f364291a2035387142db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -64,6 +64,9 @@
     <Compile Include="Assets\MakeGoblin.cs" />
     <Compile Include="Assets\ScrollCemetery.cs" />
     <Compile Include="Assets\MovePlayer.cs" />
+    <Compile Include="Assets\KillSpear.cs" />
+    <Compile Include="Assets\KillGoblin.cs" />
+    <Compile Include="Assets\MoveGoblin.cs" />
     <Compile Include="Assets\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>

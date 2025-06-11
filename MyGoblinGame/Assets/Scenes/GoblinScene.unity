@@ -592,6 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedBack: 1.5
   speedPlayer: 6
+  speedGoblin: 3
   forcePlayer: 4000
   forceSpear: 1000
 --- !u!4 &703498522
