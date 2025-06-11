@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MakeGoblin.cs" />
     <Compile Include="Assets\ScrollCemetery.cs" />
     <Compile Include="Assets\MovePlayer.cs" />
     <Compile Include="Assets\GameManager.cs" />
