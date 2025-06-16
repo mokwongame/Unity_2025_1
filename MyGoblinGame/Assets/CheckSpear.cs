@@ -4,10 +4,12 @@ public class CheckSpear : MonoBehaviour
 {
     public GameObject bang;
 
+    GameManager gameManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        gameManager = FindAnyObjectByType<GameManager>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class CheckSpear : MonoBehaviour
         if (tag == "Goblin") // 창이 고블린에 충돌
         {
             makeBang();
+            gameManager.incScore(gameManager.scoreGoblin);
             Destroy(collision.gameObject, 0.25f);    // 0.5초 뒤에 고블린 파괴
             Destroy(gameObject, 0.5f); // 0.25초 뒤에 창을 파괴
         }
