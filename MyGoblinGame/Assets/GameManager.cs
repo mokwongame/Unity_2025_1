@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,18 +14,21 @@ public class GameManager : MonoBehaviour
 
     public TMP_Text textScore;
 
-    int score = 0;
+    int score = 100;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        updateScore();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("EndScene");
+        }
     }
 
     public void incScore(int s)

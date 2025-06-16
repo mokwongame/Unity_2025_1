@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class MovePlayer : MonoBehaviour
         GameObject newSpear = Instantiate(spear, pos, spear.transform.rotation);
         Rigidbody2D rb = newSpear.GetComponent<Rigidbody2D>();
         rb.AddForce(Vector2.right * gameManager.forceSpear);
+
+        gameManager.decScore(gameManager.scoreSpear);
     }
 
     private void jumpPlayer()
@@ -56,7 +59,13 @@ public class MovePlayer : MonoBehaviour
         if (tag == "Goblin")
         {
             Debug.Log("Knight is hit.");
-            Destroy(gameObject, 0.5f);
+            Invoke("endGame", 1.0f);
+            //Destroy(gameObject, 0.5f);
         }
+    }
+
+    void endGame()
+    {
+        SceneManager.LoadScene("EndScene");
     }
 }
