@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 1550807480569296663}
   - component: {fileID: 4174404026123333015}
   - component: {fileID: 1143677828350304368}
+  - component: {fileID: 5264331995613544642}
   m_Layer: 0
   m_Name: Spear
-  m_TagString: Untagged
+  m_TagString: Spear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,3 +313,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53abc137f2b5f364291a2035387142db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5264331995613544642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5886663064835743483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323550321e915494f9f825f038ed8707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bang: {fileID: 7560355843503305900, guid: 89bcf8cbab35f194da409ee3e162875c, type: 3}

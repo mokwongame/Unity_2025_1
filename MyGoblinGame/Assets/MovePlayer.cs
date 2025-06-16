@@ -49,4 +49,14 @@ public class MovePlayer : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.AddForce(Vector2.up * gameManager.forcePlayer); // AddForce(): 특정 방향으로 힘주기
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        string tag = collision.gameObject.tag;
+        if (tag == "Goblin")
+        {
+            Debug.Log("Knight is hit.");
+            Destroy(gameObject, 0.5f);
+        }
+    }
 }
